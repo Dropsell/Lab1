@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    MyProfileComponent
+    MyProfileComponent,
+    DataTableComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -29,6 +32,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'my-profile', component: MyProfileComponent },
+      { path: 'data-table', component: DataTableComponent },
     ])
   ],
   providers: [],
